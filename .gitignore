@@ -1,0 +1,12 @@
+__pycache__
+
+# Mac OS
+.DS_Store
+
+# Example IPython notebook files
+.ipynb_checkpoints/
+.cache
+.metadata
+
+# CV3 file
+MIRM107-E-6021041029_1_493_SE_2016-01-21T04h22m18.fits

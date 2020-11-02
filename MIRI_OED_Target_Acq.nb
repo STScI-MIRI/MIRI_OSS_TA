@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[   3195950,      53072]
-NotebookOptionsPosition[   3189621,      52917]
-NotebookOutlinePosition[   3189999,      52934]
-CellTagsIndexPosition[   3189956,      52931]
+NotebookDataLength[   3196590,      53085]
+NotebookOptionsPosition[   3190262,      52930]
+NotebookOutlinePosition[   3190639,      52947]
+CellTagsIndexPosition[   3190596,      52944]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -52524,7 +52524,11 @@ Cell[BoxData[
      "\[IndentingNewLine]", 
      RowBox[{"aperName", "=", 
       RowBox[{"associationSub", "[", "\"\<AperName\>\"", "]"}]}], ";", 
-     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(*", " ", 
+      RowBox[{
+      "extracting", " ", "SIAF", " ", "info", " ", "about", " ", "the", " ", 
+       "chosen", " ", "subarray"}], "*)"}], "\[IndentingNewLine]", 
      RowBox[{"siafEntry", "=", 
       RowBox[{"aperName", "/.", "siafEntriesPre3"}]}], ";", 
      "\[IndentingNewLine]", 
@@ -52609,6 +52613,10 @@ Cell[BoxData[
         RowBox[{"whichSequence", "[", 
          RowBox[{"TASub", ",", "lensROIS"}], "]"}], "]"}], "]"}]}], ";", 
      "\[IndentingNewLine]", 
+     RowBox[{"(*", 
+      RowBox[{
+      "getting", " ", "point", " ", "source", " ", "location", " ", "on", " ",
+        "the", " ", "full", " ", "array"}], "*)"}], "\[IndentingNewLine]", 
      RowBox[{"pointSourceLocationsOnFullArray", "=", 
       RowBox[{"roiLocations", "+", 
        RowBox[{"roiSizes", "/", "2"}], "+", "1"}]}], ";", 
@@ -52683,8 +52691,12 @@ Cell[BoxData[
      RowBox[{"pp2", "=", 
       RowBox[{"mapFun", "[", "point2", "]"}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"numba", "=", 
-      RowBox[{"length", "-", "refColLength"}]}], ";", "\n", 
-     "\[IndentingNewLine]", 
+      RowBox[{"length", "-", "refColLength"}]}], ";", "\n", "   ", 
+     RowBox[{"(*", 
+      RowBox[{
+      "this", " ", "block", " ", "of", " ", "code", " ", "interleaves", " ", 
+       "the", " ", "reference", " ", "pixels", " ", "into", " ", "every", " ",
+        "5", "th", " ", "column"}], "*)"}], "\[IndentingNewLine]", 
      RowBox[{"imdata1", "=", 
       RowBox[{"Table", "[", "\[IndentingNewLine]", 
        RowBox[{
@@ -52884,7 +52896,8 @@ Cell[BoxData[
    3.778499199771861*^9}, {3.781442892328477*^9, 3.7814428934887257`*^9}, {
    3.781443012594467*^9, 3.781443056099785*^9}, {3.781443233382737*^9, 
    3.781443241256455*^9}, {3.7814445400853443`*^9, 3.781444560624661*^9}, {
-   3.781444635261796*^9, 3.781444651598835*^9}, 3.7814448715713587`*^9},
+   3.781444635261796*^9, 3.781444651598835*^9}, 3.7814448715713587`*^9, {
+   3.813317773344836*^9, 3.813317838746154*^9}},
  CellLabel->
   "(Debug) 11/2/20 09:31:24 \
 In[75]:=",ExpressionUUID->"f028a045-5331-47f5-a6cb-f2f129b60d43"],
@@ -52917,7 +52930,7 @@ In[77]:=",ExpressionUUID->"a24bbc2d-9455-4dd5-bd22-5b148b580175"]
 },
 Evaluator->"Local",
 WindowSize->{1584, 918},
-WindowMargins->{{212, Automatic}, {Automatic, 142}},
+WindowMargins->{{377, Automatic}, {91, Automatic}},
 FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 27, \
 2017)",
 StyleDefinitions->"Default.nb"
@@ -53057,14 +53070,14 @@ Cell[3170174, 52443, 649, 13, 32, "Output", "ExpressionUUID" -> \
 "e7db5a78-0d89-47c2-83a0-5893601fb968"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3170860, 52461, 17682, 428, 1661, "Input", "ExpressionUUID" -> \
+Cell[3170860, 52461, 18323, 441, 1682, "Input", "ExpressionUUID" -> \
 "f028a045-5331-47f5-a6cb-f2f129b60d43"],
-Cell[3188545, 52891, 592, 9, 24, "Print", "ExpressionUUID" -> \
+Cell[3189186, 52904, 592, 9, 24, "Print", "ExpressionUUID" -> \
 "a145e390-ae9e-4f52-8fd7-e3d26ad2a40a"]
 }, Open  ]],
-Cell[3189152, 52903, 201, 4, 32, "Input", "ExpressionUUID" -> \
+Cell[3189793, 52916, 201, 4, 32, "Input", "ExpressionUUID" -> \
 "c4da81d9-9939-4323-85f5-7f24d9ad602b"],
-Cell[3189356, 52909, 249, 5, 32, "Input", "ExpressionUUID" -> \
+Cell[3189997, 52922, 249, 5, 32, "Input", "ExpressionUUID" -> \
 "a24bbc2d-9455-4dd5-bd22-5b148b580175"]
 }, Open  ]]
 }

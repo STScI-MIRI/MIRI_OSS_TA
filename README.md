@@ -1,3 +1,5 @@
+To properly run the code in the MIRI_OED_Target_Acq.nb Mathematica notebook, the user needs to edit the variable "pythonLocation" located at the  beginning of the notebook to point to there local python installation.
+
 - This script generates 3 products for a given configuration, where a configuration consists of 3 inputs: readout type, subarray, and number of integrations. The three products include a FITS file (for OSS to test), a .png file (for reference), and a README.txt file (provides more information on the FITS file)
 - Size and location of ROIs are taken from the the MIRI SIAF excel file: MIRI_SIAF.xml, which currently is taken from here: https://github.com/spacetelescope/pysiaf/tree/master/pysiaf/prd_data/JWST/PRDOPSSOC-H-015/SIAFXML
 - All {X,Y} locations are given using the SIAF pixel location scheme - note this coordinate system is the same as the one used in DS9.

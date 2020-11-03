@@ -9,6 +9,10 @@
 An example input configuration:
 {readout, subarray, int_number} = {"FASTGRPAVG16","MASK1065",4}. An example of the resulting README.txt for this config would look like this:
 
+
+
+
+
 README for MIR4QPM_FASTGRPAVG16_MASKnnnn_4.fits, hereafter referred to as Delivered_FITS_File.
 - Size and location of ROIs are taken from the the MIRI SIAF excel file: MIRI_SIAF.xml
 - All {X,Y} locations are given using the SIAF pixel location scheme - note this coordinate system is the same as the one used in DS9.
